@@ -1,82 +1,89 @@
 # Mid-Term Project: Remixing in Communities of Practice
 
-**Project Title -** Inclusive Animatronic Face with Customizable Voice Lines  
+**Project Title -**  Laurel (Automatic Watering and Pet Deterrent Device)
 ---
 
 ## Overview
 
 ### Original Project:  
-[Face With Animatronic Eyes, Motion Detection, and Voice](https://www.instructables.com/Face-With-Animatronic-Eyes-Motion-Detection-and-Vo/)
+[Automatic Plant Watering System Using Arduino in an Easy Way](https://www.instructables.com/Automatic-Plant-Watering-System-Using-Arduino-in-a/)
 
 ### Project Description:  
-The original project features an animatronic face with moving eyes that react to motion detected by a PIR sensor, along with pre-programmed voice lines triggered by movement. The project is powered by an Arduino Nano and includes two servos for eye movement (output) and a PIR sensor for motion detection (input). It is designed to simulate lifelike interactions, responding to nearby motion with eye movement and sound.
+The original project used a soil moisture detection device to determine the current moisture level of the soil, and activated a water pump when the moisture was too low, thus achieving automatic watering for plants. In this iteration, I added protection to the exposed circuits to prevent water splashes from damaging the delicate electronic components when the pump is operating. I also aesthetically improved the device using natural materials like wood. Additionally, I designed a pet deterrent function using an ultrasonic distance sensor and a small servo motor.
 
 ---
 ## Revision Overview
 
 ### Element Chosen for Revision:  
-I chose to revise the form factor of the animatronic face and diversify the voice line triggers based on distance detection.
+While retaining the original functionality, I added protection to the circuit and introduced a new, practical feature.
 
 ### Reason for Revision:  
-The original face design, while innovative, was difficult for beginners and lacked flexibility for a wide range of users. My revision focuses on making the project more accessible to individuals from diverse backgrounds and skill levels. By creating a modular, easy-to-assemble face structure, I aim to open up this project to makers with limited access to advanced tools and materials, including those from underrepresented communities in technology. 
+Tn addition to the automatic watering function, the water pump’s operation might draw the curiosity of household pets (cats and dogs), potentially causing damage to electronic components (chewing, knocking off high places, breaking wires, etc.). Therefore, I added a pet deterrent feature to help keep the device intact, especially when the owner is away for extended periods.
+
+
 
 ---
 ## Supplies & Materials
 
 ### Components Used:  
-- **Arduino Board**: Arduino Nano  
-- **Input Components**: PIR motion sensor, ultrasonic distance sensor (for new voice line triggers)  
-- **Output Components**: Two servos (animating the eyes), speaker module (for voice lines)  
-- **Additional Materials**: 3D-printed modular face structure, wires, breadboard, power supply, eco-friendly filament for printing
+- **Arduino Board**: Arduino Uno  
+- **Input Components**: Ultrasonic distance sensor, Soil moisture sensor
+- **Output Components**: Water pump, Servo motor, Buzzer
+- **Additional Materials**: Wood, Wood chips，wires, breadboard, power supply, hot glue，wood glue，cardboard
 
-### Images:  
-![Supplies](./images/midterm/supplies.jpeg) 
-![Components](./images/midterm/components.jpeg)
+
 
 ---
 
 ## Process
 
-1. I gathered all the necessary components, including the Arduino Nano, PIR sensor, servos, and 3D-printed face parts.
-
-2. I assembled the animatronic eyes by attaching the servos to the eye sockets and connecting them to the Arduino.
+1. I followed the original author's tutorial to replicate the functionality of the entire device and understood the design principles by studying their code.
 
 ![Progress Photo](./images/midterm/progress1.jpeg) 
 
-3. I wired the PIR sensor to detect motion and trigger the servos for eye movement.
+2. I ordered the new modules online and attempted to integrate them into the device and its code.
 
-4. I redesigned the face structure to be modular. I 3D-printed smaller, easy-to-assemble parts, making the project accessible to those with limited technical experience or fewer fabrication resources.
+3. Using wood and a hot glue gun, I made a protective wooden frame for both the plants and the circuit, and I concealed the ultrasonic sensor within the frame to ensure the device appeared natural and aesthetically pleasing.
 
 ![Progress Photo](./images/midterm/progress2.jpeg) 
 
-5. Add an ultrasonic distance sensor to trigger different voice lines depending on how close someone is to the face. This makes the system more interactive and adaptable for use in educational or artistic contexts, where it could represent different cultural stories or experiences.
+4. I continuously tested the new modules and ensured the entire device functioned perfectly before assembly.
 
-6. Upload the Arduino code to manage the motion detection, eye movement, and voice lines based on proximity.
+![Progress Photo](./images/midterm/progress3.jpg) 
 
-![Progress Photo](./images/midterm/progress3.jpeg) 
+5. I tried using a motor to drive a deformation mechanism, but due to the motor's excessive speed and vibration, it frequently detached and damaged other components. Therefore, I decided to use a smaller servo motor that offered better control and gentler movement.
+
+
+![Progress Photo](./images/midterm/progress4.jpg) 
+
+6. I assembled the components and the frame, and hid and protected electronic components that were likely to be splashed by water.
+
+![Progress Photo](./images/midterm/progress4.jpg) 
+
+
 
 ---
 
 ## Video Demonstration
 
-[Watch the video demonstration here](https://www.youtube.com/watch?v=H712Cc5Ca94)
+[Watch the video demonstration here](https://youtube.com/shorts/DslZJyp38R4?si=4p1krp5nERGQVVJz)
 
 ---
 
 ## Final Project Images
 
-1. ![Full View](./images/midterm/final-image-1.jpeg)  
-2. ![Detail View](./images/midterm/final-image-2.jpeg)  
-3. ![Alternate View](./images/midterm/final-image-3.jpeg)
+1. ![Full View](./images/midterm/final-image-1.jpg)  
+2. ![Detail View](./images/midterm/final-image-2.jpg)  
+3. ![Alternate View](./images/midterm/final-image-3.jpg)
 
 ---
 
 ## Arduino Code
 
-The Arduino code for this project is available [here](/arduino-code/midterm/).
+The Arduino code for this project is available [here](/arduino-code/midterm/midterm.ino).
 
 ---
 
 ## Design Justification 
 
-The original animatronic face design was visually impressive but inaccessible to beginners and makers with limited resources. By revising the face structure to be modular and 3D-printed with eco-friendly materials, I made the project easier to build and more environmentally responsible. This revision also democratizes the project, making it available to a broader audience, including those from underrepresented communities in tech. I further customized the voice line system by integrating an ultrasonic sensor to trigger different sounds based on proximity. This allows the project to adapt to different cultural contexts, where it can reflect diverse narratives or be used in educational settings to highlight the voices of marginalized communities. These revisions are intended to make the project both more accessible and culturally meaningful.
+The original design was simple and easy to use. With my remixing, I aimed to enhance both functionality and protection based on my own experiences. During the early stages of the project, I considered why users would need an automatic watering device. I believe the primary need for automatic watering arises when users are away for long periods (vacation, business trips, etc.) and cannot take care of their plants. In the absence of the owner, maintaining the device's functionality for as long as possible is crucial. If the device or circuitry were damaged, users wouldn't be able to repair it, which could result in the plants dying from dehydration. And since I have a rather energetic cat, preventing pet-induced damage to the device became the main reason for my remixing of the original project.
