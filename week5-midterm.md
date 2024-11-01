@@ -54,7 +54,7 @@ Tn addition to the automatic watering function, the water pump’s operation mig
 5. I tried using a motor to drive a deformation mechanism, but due to the motor's excessive speed and vibration, it frequently detached and damaged other components. Therefore, I decided to use a smaller servo motor that offered better control and gentler movement.
 
 
-![Progress Photo](./images/midterm/progress4.jpg) 
+![Progress Photo](./images/midterm/progress5.jpg) 
 
 6. I assembled the components and the frame, and hid and protected electronic components that were likely to be splashed by water.
 
