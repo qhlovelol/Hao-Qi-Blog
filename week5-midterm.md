@@ -80,7 +80,7 @@ Tn addition to the automatic watering function, the water pump’s operation mig
 
 ## Arduino Code
 
-The Arduino code for this project is available [here](/arduino-code/midterm/midterm.ino).
+The Arduino code for this project is available [here](/arduino-code/midterm).
 
 ---
 
